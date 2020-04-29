@@ -15,3 +15,6 @@ The steganography algorithms implemented are:
 3. The binning algorithm from [Generating Steganographic Text with LSTMs](https://arxiv.org/abs/1705.10742)
 
 An example of encoding and decoding a message is in `run_single.py`. The algorithm used is determined by the `mode` parameter.
+
+## To run the Flask app
+In Terminal, type `export FLASK_APP=app.py`. Then, `flask run`.
