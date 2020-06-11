@@ -11,10 +11,10 @@
 
     <form action="/form" method="post">
         <h5>Context:</h5>
-        <textarea class="form-control" id="context" name="context" rows="8">Washington received his initial military training and command with the Virginia Regiment during the French and Indian War. He was later elected to the Virginia House of Burgesses and was named a delegate to the Continental Congress, where he was appointed Commanding General of the nation's Continental Army. Washington led American forces, allied with France, in the defeat of the British at Yorktown. Once victory for the United States was in hand in 1783, Washington resigned his commission.</textarea>
+        <textarea class="form-control" id="context" name="context" rows="8">{% if context %}{{context}}{% else %}Washington received his initial military training and command with the Virginia Regiment during the French and Indian War. He was later elected to the Virginia House of Burgesses and was named a delegate to the Continental Congress, where he was appointed Commanding General of the nation's Continental Army. Washington led American forces, allied with France, in the defeat of the British at Yorktown. Once victory for the United States was in hand in 1783, Washington resigned his commission.{% endif %}</textarea>
         <br>
         <h5>Message:</h5>
-        <textarea class="form-control" id="message" name="message" rows="8"></textarea>
+        <textarea class="form-control" id="message" name="message" rows="8">{% if text %}{{text}}{% endif %}</textarea>
         <br>
         <h5>I would like to:</h5>
         <select id="method" name="method">
